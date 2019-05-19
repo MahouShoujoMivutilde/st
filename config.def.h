@@ -1,5 +1,5 @@
 /* See LICENSE file for copyright and license details. */
-/* vim: set noet */
+/* vim: set noet: */
 /*
  * appearance
  *
