@@ -2,7 +2,7 @@
 
 pkgname=st-mivu
 _pkgname=st
-pkgver=0.8.2.r1082.756931d
+pkgver=0.8.2.r1083.db7e36d
 pkgrel=1
 pkgdesc="Simple (suckless) terminal"
 arch=('i686' 'x86_64')
@@ -21,10 +21,10 @@ pkgver() {
         "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
-prepare() {
-    # skip terminfo which conflicts with ncurses
-    sed -i '/tic /d' Makefile
-}
+# prepare() {
+#     # skip terminfo which conflicts with ncurses
+#     sed -i '/tic /d' Makefile
+# }
 
 build() {
     make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
