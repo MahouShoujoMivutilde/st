@@ -169,11 +169,11 @@ static MouseShortcut mshortcuts[] = {
 #define TERMMOD (Mod1Mask|ShiftMask)
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
-	"st-find-urls | dmenu -i -p 'Follow which url?' -l 10 | xargs -r xdg-open",
+	"st-find-urls | rofi -dmenu -i -p 'Follow which url?' -l 10 | xargs -r xdg-open",
 	"externalpipe", NULL };
 
 static char *copyurlcmd[] = { "/bin/sh", "-c",
-	"st-find-urls | dmenu -i -p 'Copy which url?' -l 10 | tr -d '\n' | xclip -selection clipboard",
+	"st-find-urls | rofi -dmenu -i -p 'Copy which url?' -l 10 | tr -d '\n' | xclip -selection clipboard",
 	"externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
