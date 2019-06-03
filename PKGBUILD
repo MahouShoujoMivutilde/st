@@ -2,9 +2,10 @@
 
 pkgname=st-mivu
 _pkgname=st
-pkgver=0.8.2.r1083.db7e36d
+pkgver=0.8.2.r1086.58b3d51
 pkgrel=1
 pkgdesc="Simple (suckless) terminal"
+url="https://github.com/MahouShoujoMivutilde/st"
 arch=('i686' 'x86_64')
 license=('MIT')
 depends=('libxft')
