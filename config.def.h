@@ -105,14 +105,14 @@ static const char *colorname[] = {
 	[12] = "#3692d5", /* blue    */
 	[13] = "#5ac3f8", /* magenta */
 	[14] = "#3fbee9", /* cyan    */
-	[15] = "#d7ffff", /* white   */
+	[15] = "#c8ecec", /* white   */
 
 	[255] = 0,
 
 	/* special colors */
 	[256] = "#10141f", /* background */
-	[257] = "#d7ffff", /* foreground */
-	[258] = "#d7ffff",     /* cursor */
+	[257] = "#c8ecec", /* foreground */
+	[258] = "#c8ecec",     /* cursor */
 };
 
 
