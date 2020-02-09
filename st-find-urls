@@ -1,5 +1,0 @@
-#!/bin/sh
-
-sed 's/.*│//g' | tr -d '\n' |
-grep -aEo '(((http|https)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./&%?#+=_-]*)|((magnet:\\?xt=urn:btih:)[a-zA-Z0-9]*)' |
-sort -u | sed 's#^www.#http://#g'
