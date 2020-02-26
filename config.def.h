@@ -239,6 +239,18 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ MODKEY,               XK_f,           externalpipe,   {.v = openurlcmd } },
 	{ MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } },
+
+	{ TERMMOD,              XK_Cyrillic_EL,          kscrollup,      {.i =  1} },
+	{ TERMMOD,              XK_Cyrillic_O,           kscrolldown,    {.i =  1} },
+	{ MODKEY,               XK_Cyrillic_ghe,         kscrollup,      {.i = -1} },
+	{ MODKEY,               XK_Cyrillic_ve,          kscrolldown,    {.i = -1} },
+	{ TERMMOD,              XK_Cyrillic_GHE,         zoom,           {.f = +1} },
+	{ TERMMOD,              XK_Cyrillic_VE,          zoom,           {.f = -1} },
+	{ TERMMOD,              XK_Cyrillic_ES,          clipcopy,       {.i =  0} },
+	{ TERMMOD,              XK_Cyrillic_EM,          clippaste,      {.i =  0} },
+	{ TERMMOD,              XK_Cyrillic_PE,          selpaste,       {.i =  0} },
+	{ MODKEY,               XK_Cyrillic_a,           externalpipe,   {.v = openurlcmd } },
+	{ MODKEY,               XK_Cyrillic_en,          externalpipe,   {.v = copyurlcmd } },
 };
 
 /*
