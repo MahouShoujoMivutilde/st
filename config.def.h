@@ -213,7 +213,7 @@ static MouseShortcut mshortcuts[] = {
 #define TERMMOD (Mod1Mask|ShiftMask)
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
-	"xurls | sort -u | dmenu -i -p 'Follow which url?' -l 10 | xargs -r xdg-open",
+	"xurls | sort -u | dmenu -i -p 'Follow which url?' -l 10 | xargs -r opener",
 	"externalpipe", NULL };
 
 static char *copyurlcmd[] = { "/bin/sh", "-c",
